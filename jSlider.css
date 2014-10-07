@@ -88,16 +88,12 @@ div.jSlider > div.navBtnsContainer {
 	top:90%;
 	left:50%;
 	height:10%;
-	/*width:50%;*/
-	/*background-color:rgba(255,255,255,0.5);*/
-	/*padding-top:1%;*/
 	clear:both;
 }
 
 div.jSlider > div.navBtnsContainer > div {
 	left:-50%;
 	position:relative;
-	/*padding-top:17%;*/
 }
 
 /*buttons*/
@@ -117,14 +113,3 @@ div.navBtnsContainer button.navBtn {
 div.jSlider:hover > div.navBtnsContainer button.navBtn.activated {
 	opacity:1;
 }
-
-/*buttons*/
-/*div.navBtnsContainer > div > div {
-	height:40%;
-	width:16px;
-	float:left;
-	margin-right:2px;
-	margin-left:2px;
-	background-color:rgba(255,255,255,0.5);
-	border-radius:100%;
-}*/
