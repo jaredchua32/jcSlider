@@ -91,7 +91,7 @@
 			}
 
 			this.dimensionsReady.done(function() {
-				$.each(self.imgFrames, function(index, frame) {
+				self.imgFrames.forEach(function(frame) {
 					frame.css('max-height', self.imgHeight);
 				})
 			});
@@ -99,8 +99,7 @@
 
 		frameImages: function() {
 			var self = this;
-
-			$.each(this.imgFrames, function(index, frame) {
+			this.imgFrames.forEach(function(frame, index) {
 				frame.append(self.images[index]);
 			});
 		},
@@ -153,9 +152,9 @@
 		},
 
 		initSideButtons: function() {
-			if(this.options.buttons === 'none') { 
+			if(this.options.sideButtons === 'none') { 
 				return;
-			} else if(this.options.buttons === 'auto') {
+			} else if(this.options.sideButtons === 'auto') {
 				this.options.leftBtn = $('<button>', {class: 'leftBtn' });
 				this.options.rightBtn = $('<button>', { class: 'rightBtn' });
 				this.sliderContainer.append(this.options.leftBtn, this.options.rightBtn);
@@ -163,7 +162,7 @@
 		},
 
 		bindSideButtons: function() {
-			if(this.options.buttons === 'none') { return; }
+			if(this.options.sideButtons === 'none') { return; }
 			var self = this;
 
 			this.options.leftBtn.on('click', function() {
@@ -222,7 +221,6 @@
 					clickedIndex = clickedItem.getAttribute('data-btnIndex') || -1;
 
 				if(clickedIndex === -1) { return; }
-
 				var currentIndex = self.dispIndex,
 					diff = clickedIndex - currentIndex,
 					absDiff = Math.abs(diff);
@@ -323,7 +321,7 @@
 					if((slider.queue().length) === 0) { 
 						setTimeout(function() {
 							self.initAutoScroll();
-						}, self.options.scrollInterval);
+						}, self.options.scrollDuration + self.options.pauseDuration);
 					}
 				});
 		},
@@ -364,8 +362,7 @@
 					if(self.getQueueLength() === 0) {
 						setTimeout (function() {
 							self.initAutoScroll();
-							console.log('autoScroll enabled');
-						}, self.options.scrollInterval);
+						}, self.options.scrollDuration + self.options.pauseDuration);
 					}
 				});
 		},
@@ -407,13 +404,14 @@
 		frameBG: '#000000',
 		marginTop: '50px',
 		resizeDelay: 50,
-		buttons: 'auto',
+		sideButtons: 'auto',
 		leftBtn: undefined,
 		rightBtn: undefined,
 		navButtons: true,
 		autoScroll: true,
 		scrollInterval: 3000,
 		scrollDuration: 600,
+		pauseDuration: 1000,
 		easing: 'linear'
 	}
 	
