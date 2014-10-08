@@ -68,10 +68,6 @@
 				self.imgWidth = (self.options.width === 'auto')
 					? img.naturalWidth
 					: self.options.width;
-
-				self.imgHeight = (self.options.height === 'auto')
-					? img.naturalHeight
-					: self.options.height;
 				
 				self.dimensionsReady.resolve();
 			})
@@ -114,7 +110,7 @@
 			this.sliderContainer.css('margin-top', this.options.marginTop);
 
 			this.dimensionsReady.done(function() {
-				self.sliderContainer.css('max-width',self.imgWidth);
+				self.sliderContainer.css('max-width', self.imgWidth);
 			})
 		},
 
@@ -152,9 +148,12 @@
 		},
 
 		initSideButtons: function() {
-			if(this.options.sideButtons === 'none') { 
-				return;
-			} else if(this.options.sideButtons === 'auto') {
+			if(	this.options.sideButtons === 'none' ||
+			  	typeof(this.options.leftBtn) !== 'undefined' ||
+			  	typeof(this.options.rightBtn) !== 'undefined'
+			) { return; }
+			
+			else if(this.options.sideButtons === 'auto') {
 				this.options.leftBtn = $('<button>', {class: 'leftBtn' });
 				this.options.rightBtn = $('<button>', { class: 'rightBtn' });
 				this.sliderContainer.append(this.options.leftBtn, this.options.rightBtn);
@@ -400,7 +399,6 @@
 
 	$.jSlider.options = {
 		width: 'auto',
-		height: 'auto',
 		frameBG: '#000000',
 		marginTop: '50px',
 		resizeDelay: 50,
@@ -414,5 +412,4 @@
 		pauseDuration: 1000,
 		easing: 'linear'
 	}
-	
 })(jQuery);
