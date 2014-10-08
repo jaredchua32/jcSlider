@@ -29,6 +29,7 @@ customOptions = {
 	navButtons: false,
 	autoScroll: false
 }
+
 After creating the custom options object, simply pass it along with the jQuery object holding the container div and the array of image URLs to use for the slider. JSlider will take care of overriding the settings for you!
 [code]
 $.jSlider($container, arrayOfImages, customOptions);
@@ -36,17 +37,70 @@ $.jSlider($container, arrayOfImages, customOptions);
 The details of every setting in jSlider.options are outlined below.
 
 width
-width: 'auto',
-frameBG: '#000000',
-marginTop: '50px',
-resizeDelay: 50,
-sideButtons: 'auto',
-leftBtn: undefined,
-rightBtn: undefined,
-navButtons: true,
-autoScroll: true,
-scrollInterval: 3000,
-scrollDuration: 600,
-pauseDuration: 1000,
-easing: 'linear'
+
+
+width
+default: width: 			'auto',
+possible values:
+description:
+
+frameBG
+default: frameBG: 		'#000000',
+possible values:
+description:
+
+marginTop
+default: marginTop: 		'50px',
+possible values:
+description:
+
+resizeDelay
+default: resizeDelay: 	50,
+possible values:
+description:
+
+sideButtons
+default: sideButtons: 	'auto',
+possible values:
+description:
+
+leftBtn
+default: leftBtn: 		undefined,
+possible values:
+description:
+
+rightBtn
+default: rightBtn: 		undefined,
+possible values:
+description:
+
+navButtons
+default: navButtons: 	true,
+possible values:
+description:
+
+autoScroll
+default: autoScroll: 	true,
+possible values:
+description:
+
+scrollInterval
+default: scrollInterval: 3000,
+possible values:
+description:
+
+scrollDuration
+default: scrollDuration: 600,
+possible values:
+description:
+
+pauseDuration
+default: easingpauseDuration: 	1000,
+possible values:
+description:
+
+default: easing: 		'linear'
+possible values:
+description:
+
 ==============================================
