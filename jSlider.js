@@ -164,16 +164,25 @@
 			if(this.options.sideButtons === 'none') { return; }
 			var self = this;
 
-			this.options.leftBtn.on('click', function() {
-				if(self.slider.queue().length === 0) {
-					self.clearAutoScroll();
-				}
-				self.scrollRight(); });
-			this.options.rightBtn.on('click', function() {
-				if(self.slider.queue().length === 0) {
-					self.clearAutoScroll();
-				}
-				self.scrollLeft(); });
+			if(typeof(this.options.leftBtn) !== 'undefined') {
+				this.options.leftBtn.on('click', function() {
+					if(self.slider.queue().length === 0) {
+						self.clearAutoScroll();
+					}
+
+					self.scrollRight();
+				});
+			}
+
+			if(typeof(this.options.rightBtn) !== 'undefined') {
+				this.options.rightBtn.on('click', function() {
+					if(self.slider.queue().length === 0) {
+						self.clearAutoScroll();
+					}
+
+					self.scrollLeft();
+				});
+			}
 		},
 
 		initNavButtons: function() {
@@ -219,7 +228,7 @@
 					// Otherwise, return its index.
 					clickedIndex = clickedItem.getAttribute('data-btnIndex') || -1;
 
-				if(clickedIndex === -1) { return; }
+				if(clickedIndex === -1 || self.slider.queue().length > 0) { return; }
 				var currentIndex = self.dispIndex,
 					diff = clickedIndex - currentIndex,
 					absDiff = Math.abs(diff);
@@ -412,4 +421,5 @@
 		pauseDuration: 1000,
 		easing: 'linear'
 	}
+	
 })(jQuery);

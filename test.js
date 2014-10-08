@@ -15,7 +15,7 @@
 		// marginTop: '50px',
 		// resizeDelay: 50,
 		// buttons: 'auto',
-		leftBtn: $('div.testLeft'),
+		// leftBtn: $('div.testLeft'),
 		rightBtn: $('div.testRight'),
 		// navButtons: false,
 		// autoScroll: false,
