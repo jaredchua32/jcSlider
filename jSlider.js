@@ -187,7 +187,7 @@
 						self.clearAutoScroll();
 					}
 
-					self.slideLeft();
+					self.slideRight();
 				});
 			}
 
@@ -269,7 +269,7 @@
 					}
 				} else {
 					for(var j = 0; j < leftDistance; j++) { 
-						self.slideLeft();
+						self.slideRight();
 					}
 				}
 
@@ -358,7 +358,7 @@
 			this.dispIndex = (this.dispIndex + 1) % this.images.length;
 		},
 
-		slideLeft: function() {
+		slideRight: function() {
 			var self = this,
 				slider = this.slider,
 				css = { 'margin-left':0 },
