@@ -426,7 +426,7 @@
 	$.jSlider.options = {
 		width: 'auto',
 		frameBG: '#000000',
-		marginTop: '50px',
+		marginTop: '0',
 		resizeDelay: 50,
 		sideButtons: 'auto',
 		leftBtn: undefined,
