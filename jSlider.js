@@ -187,7 +187,7 @@
 						self.clearAutoScroll();
 					}
 
-					self.scrollRight();
+					self.slideLeft();
 				});
 			}
 
@@ -197,7 +197,7 @@
 						self.clearAutoScroll();
 					}
 
-					self.scrollLeft();
+					self.slideLeft();
 				});
 			}
 		},
@@ -265,11 +265,11 @@
 
 				if(rightDistance <= leftDistance) {
 					for(var i = 0; i < rightDistance; i++) {
-						self.scrollLeft();
+						self.slideLeft();
 					}
 				} else {
 					for(var j = 0; j < leftDistance; j++) { 
-						self.scrollRight();
+						self.slideLeft();
 					}
 				}
 
@@ -302,7 +302,7 @@
 
 			if(typeof(this.scrollHandler) === 'undefined') {
 				this.scrollHandler = setInterval(function() {
-					self.scrollLeft();
+					self.slideLeft();
 				}, this.options.scrollInterval);
 			}
 		},
@@ -311,12 +311,12 @@
 			this.scrollHandler = clearInterval(this.scrollHandler);
 		},
 
-		scrollLeft: function() {
+		slideLeft: function() {
 			var self = this,
 				slider = this.slider,
 				css = {'margin-left' : -(this.slider.width() / this.images.length) + 'px'},
-				// Because each 'scroll' adds four items to the queue and
-				// the first item added onto the queue by scrollRight finishes
+				// Because each 'slide' adds four items to the queue and
+				// the first item added onto the queue by slideLeft finishes
 				// its execution almost instantaneously, I had to round up in
 				// order to get a whole number.
 				queueLen = Math.ceil(slider.queue().length / 4),
@@ -358,18 +358,18 @@
 			this.dispIndex = (this.dispIndex + 1) % this.images.length;
 		},
 
-		scrollRight: function() {
+		slideLeft: function() {
 			var self = this,
 				slider = this.slider,
 				css = { 'margin-left':0 },
-				// Similar concept as scrollLeft in order to get a
+				// Similar concept as slideLeft in order to get a
 				// whole number for queueLen.
 				queueLen = Math.ceil(this.getQueueLength() / 4),
 				dur = this.options.scrollDuration / (queueLen || 1);
 
 			slider
 				// I separated queue items 1 and 2 in order to add the
-				// same amount of items as scrollLeft to the queue,
+				// same amount of items as slideLeft to the queue,
 				// which makes sure that queueLen will always calculate
 				// to the correct whole number of items in the queue.
 				.queue(function() {
