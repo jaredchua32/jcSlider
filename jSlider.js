@@ -161,7 +161,7 @@
 				window.addEventListener('resize', function() {
 					self.resizeFrames();
 					self.resizeNavButtons();
-				}, self.options.resizeDelay);
+				});
 		},
 
 		initSideButtons: function() {
@@ -427,7 +427,6 @@
 		width: 'auto',
 		frameBG: '#000000',
 		marginTop: '0',
-		resizeDelay: 50,
 		sideButtons: 'auto',
 		leftBtn: undefined,
 		rightBtn: undefined,
