@@ -60,12 +60,12 @@ div.jSlider > button.rightBtn {
    and rightArrow.png are correct! */
 div.jSlider > button.leftBtn {
 	left:0%;
-	background-image:url(leftArrow.png);
+	background-image:url(../images/leftArrow.png);
 }
 
 div.jSlider > button.rightBtn {
 	left:90%;
-	background-image:url(rightArrow.png);
+	background-image:url(../images/rightArrow.png);
 }
 
 div.jSlider:hover > button.leftBtn,

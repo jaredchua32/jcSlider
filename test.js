@@ -1,6 +1,10 @@
 ;(function($) {
 	container = $('div.jSlider').eq(0);
-	images = ['1.png','2.png','3.png','4.png','1.png','2.png','3.png','4.png','1.png','2.png','3.png','4.png','1.png','2.png','3.png','4.png','1.png','2.png','3.png','4.png'];
+	images = ['1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png'];
+	
+	images.forEach(function(str, index) {
+		images[index] = 'images/' + str;
+	})
 	// images = ['1.png', 'grid1.jpg', 'grid2.jpg', 'grid3.jpg']
 	options = {
 		// scrollInterval: 2500,
@@ -34,7 +38,7 @@
 
 	container2 = $('div.jSlider').eq(1);
 	// images2 = ['1.png','2.png','3.png','4.png'];
-	images2 = ['5.jpg','6.jpg','7.jpg','8.jpg','9.jpg'];
+	images2 = ['images/5.jpg','images/6.jpg','images/7.jpg','images/8.jpg','images/9.jpg'];
 	options2 = {
 		marginTop: '50px',
 		autoScroll: true,
