@@ -47,8 +47,11 @@ Please see the [wiki page](https://github.com/jaredchua32/jSlider/wiki/Configuri
 ```
 container = $('div.jSlider');
 myImages = ['1.png', '2.png', '3.png', '4.png'];
+<<<<<<< HEAD
 // Please visit the wiki page for full details on options!
 
+=======
+>>>>>>> 68d90ba3b1dbb15e24bacca4ec7ae0a70a7b2a03
 myJSlider = $.jSlider(container, images, options);
 ```
 
