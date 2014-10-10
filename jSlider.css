@@ -56,6 +56,8 @@ div.jSlider > button.rightBtn {
     top:0%;
 }
 
+/* Make sure that the urls for leftarrow
+   and rightArrow.png are correct! */
 div.jSlider > button.leftBtn {
 	left:0%;
 	background-image:url(leftArrow.png);
