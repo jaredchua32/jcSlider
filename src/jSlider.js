@@ -169,7 +169,7 @@
 			  	typeof(this.options.leftBtn) !== 'undefined' ||
 			  	typeof(this.options.rightBtn) !== 'undefined'
 			) { return; }
-			
+
 			else if(this.options.sideButtons === 'auto') {
 				this.options.leftBtn = $('<button>', {class: 'leftBtn' });
 				this.options.rightBtn = $('<button>', { class: 'rightBtn' });
@@ -178,10 +178,14 @@
 		},
 
 		bindSideButtons: function() {
-			if(this.options.sideButtons === 'none') { return; }
-			var self = this;
+			var hasLeftBtn = typeof(this.options.leftBtn) !== 'undefined',
+				hasRightBtn = typeof(this.options.rightBtn) !== 'undefined',
+				self = this;
 
-			if(typeof(this.options.leftBtn) !== 'undefined') {
+			if( this.options.sideButtons === 'none' && !hasLeftBtn && !hasRightBtn )
+				{ return; }
+
+			if(hasLeftBtn) {
 				this.options.leftBtn.on('click', function() {
 					if(self.slider.queue().length === 0) {
 						self.clearAutoScroll();
@@ -191,7 +195,7 @@
 				});
 			}
 
-			if(typeof(this.options.rightBtn) !== 'undefined') {
+			if(hasRightBtn) {
 				this.options.rightBtn.on('click', function() {
 					if(self.slider.queue().length === 0) {
 						self.clearAutoScroll();
