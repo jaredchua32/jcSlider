@@ -25,6 +25,16 @@ div.jSlider img {
 	display:block;
 }
 
+/* The bottom two rules are for IE10 and below. */
+div.jSlider > div > div > img {
+	height:auto;
+	width:auto;
+}
+
+/*div.jSlider > div > div:nth-child(n+1) > img {
+	width:auto;
+}*/
+
 div.jSlider .cf:before,
 div.jSlider .cf:after {
 	content: "";
@@ -94,6 +104,7 @@ div.jSlider > div.navBtnsContainer {
 }
 
 div.jSlider > div.navBtnsContainer > div {
+	height:100%;
 	left:-50%;
 	position:relative;
 }

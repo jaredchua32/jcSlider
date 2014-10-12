@@ -18,6 +18,7 @@
 ;(function($, undefined) {
 	var JSlider = {
 		init: function(container, imageUrls, options) {
+
 			this.sliderContainer = container;
 			this.urls = imageUrls;
 			this.options = $.extend({}, $.jSlider.options, options);
@@ -61,13 +62,15 @@
 
 						if(i === 0) {
 							self.firstImageLoaded.resolve(this);
+							self.resizeFrames();
 						} else {
 							if(self.firstImg.height > this.height) {
 								self.shortImages.push($(this));
 							}
 							
 							if(self.loadedImages === self.urls.length) {
-								self.resizeFrames();
+									self.resizeFrames();
+								self.resizeNavButtons();
 							}
 						}
 					};
@@ -143,7 +146,8 @@
 		},
 
 		resizeFrames: function() {
-			var curImgHeight = this.images[0].height();
+			// var curImgHeight = this.images[0].height();
+			var curImgHeight = this.images[0][0].getBoundingClientRect().height;
 
 			for(index = 1; index < this.imgFrames.length; index++) {
 				this.imgFrames[index].css('height', curImgHeight + 'px');
@@ -419,6 +423,10 @@
 
 		deactivateButton: function($button) {
 			$button.removeClass('activated');
+		},
+
+		timeDiff: function() {
+			return Date.now() - this.startTime;
 		}
 	} // end JSlider
 

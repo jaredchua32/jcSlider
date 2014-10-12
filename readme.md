@@ -31,5 +31,10 @@ Please visit the [Using jSlider](https://github.com/jaredchua32/jSlider/wiki/Usi
 View jSlider on my [site]()! (coming soon)
 
 ## Browser Support
-
-Coming soon
+  - Chrome
+  - Firefox
+  - Internet Explorer
+    - 11 (edge)
+    - 10 (emulated)
+    - 9 (emulated)
+  - Safari

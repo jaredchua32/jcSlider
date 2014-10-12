@@ -21,7 +21,7 @@
 		sideButtons: 'auto',
 		// leftBtn: $('div.testLeft'),
 		// rightBtn: $('div.testRight'),
-		navButtons: false,
+		// navButtons: false,
 		autoScroll: false,
 		// scrollInterval: 1500,
 		// scrollDuration: 600,
@@ -31,21 +31,33 @@
 	}
 	slider1 = $.jSlider(container, images, options);
 	
-	var time1, time2;
+	// var zz = 0;
+	// var handelr;
+
+	// handelr = setInterval(function() {
+	// 	console.log(zz + '. ' + slider1.images[0][0].getBoundingClientRect().height)
+	// 	if(zz === 50) {
+	// 		handelr = clearInterval(handelr);
+	// 	}
+	// 	zz++;
+	// },1)
 
 
 
 
-	// container2 = $('div.jSlider').eq(1);
-	// // images2 = ['1.png','2.png','3.png','4.png'];
-	// images2 = ['images/5.jpg','images/6.jpg','images/7.jpg','images/8.jpg','images/9.jpg'];
-	// options2 = {
-	// 	marginTop: '50px',
-	// 	autoScroll: true,
-	// 	scrollInterval: 2700,
-	// 	scrollDuration: 600,
-	// 	easing: 'swing'
-	// }
-	// slider2 = $.jSlider(container2, images2, options2);
+	container2 = $('div.jSlider').eq(1);
+	// images2 = ['1.png','2.png','3.png','4.png'];
+	images2 = ['5.jpg','6.jpg','7.jpg','8.jpg','9.jpg'];
+	images2.forEach(function(str, index) {
+		images2[index] = '../test_images/' + str;
+	})
+	options2 = {
+		marginTop: '50px',
+		autoScroll: true,
+		scrollInterval: 2700,
+		scrollDuration: 600,
+		easing: 'swing'
+	}
+	slider2 = $.jSlider(container2, images2, options2);
 
 })(jQuery);
