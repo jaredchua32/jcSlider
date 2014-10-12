@@ -16,17 +16,15 @@ JSlider's options can easily be overwritten globally for all sliders or on a per
 
 ### jSlider Will Display ANY Image!
 
-The images you give to JSlider don't have to be the same size. jSlider will automatically place them together elegantly.
+The images you give to JSlider do not need to have the same dimensions. jSlider will automatically display them elegantly.
 
 ## For Developers
 
-I learned **a lot** while making jSlider. My hope is to share not only the plugin, but also some of the knowledge that I have gained from this project.
-
-[Create technical info for jSlider]
+I learned **a lot** while making jSlider. My hope is to share not only the plugin, but also some of the knowledge that I have gained from this project. Please visit the [jSlider Basics](https://github.com/jaredchua32/jSlider/wiki/jSlider-Basics) wiki page to see how jSlider works.
 
 ## Installation
 
-Please visit the [Using jSlider](https://github.com/jaredchua32/jSlider/wiki/Using-jSlider) page in the wiki for more information on how to install, configure, and use jSlider for your projects or applications.
+Please visit the [Using jSlider](https://github.com/jaredchua32/jSlider/wiki/Using-jSlider) wiki page in the wiki for more information on how to install, configure, and use jSlider for your projects or applications.
 
 ## Demo
 

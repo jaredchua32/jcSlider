@@ -18,13 +18,13 @@ In order to install jSlider, you must:
 
 3. Place the following into your project folder:
 
-  * [jSlider.js](#) (coming soon)
+  * [jSlider.js](#)
 
-  * [jSlider.css](#) (coming soon)
+  * [jSlider.css](#)
 
-  * [leftArrow.png](#) (coming soon)
+  * [leftArrow.png](#)
 
-  * [rightArrow.png](#) (coming soon)
+  * [rightArrow.png](#)
 
   \* You do not need to add leftArrow.png and rightArrow.png to your project if you won't be using jSlider's `sideButtons` option.
 
