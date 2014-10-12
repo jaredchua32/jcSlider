@@ -41,29 +41,35 @@ The above functions are essentially the same but the ordering of the items added
 `JSlider.slideLeft()` is summarized by the following pseuducode:
 
 ```
-1. If the nav buttons (the little dots towards the bottom of the slider) are enabled,
-deactivate the current button that's lit up and activate the next button (left or right,
-whichever is chosen by jSlider - will be explained in the nav buttons section).
+1. If the nav buttons (the little dots towards the bottom of the slider)
+are enabled, deactivate the current button that's lit up and activate
+the next button (left or right, whichever is chosen by jSlider - will
+be explained in the nav buttons section).
 
 2. Slide the image left.
 
-3. Move the first image to the end of the slider and update the current image index.
+3. Move the first image to the end of the slider and update the
+current image index.
 
-4. If there are no other items in the queue, unpause the slider's auto scroll.
+4. If there are no other items in the queue, unpause the slider's
+auto scroll.
 ```
 
 `JSlider.slideRight()` on the other hand is summarized by the following pseudocode:
 
 ```
-1. If the nav buttons (the little dots towards the bottom of the slider) are enabled, deactivate the
-current button that's lit up.
+1. If the nav buttons (the little dots towards the bottom of the slider)
+are enabled, deactivate the current button that's lit up.
 
-2. Move the last image to the end of the slider and update the current image index and activate the next
-button (left or right, whichever is chosen by jSlider - will be explained in the nav buttons section).
+2. Move the last image to the end of the slider and update the
+current image index and activate the next button (left or right,
+whichever is chosen by jSlider - will be explained in the nav buttons
+section).
 
 3. Slide the image right.
 
-4. If there are no other items in the queue, unpause the slider's auto scroll.
+4. If there are no other items in the queue, unpause the slider's
+auto scroll.
 ```
 
 ### pause
