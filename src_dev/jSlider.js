@@ -85,7 +85,8 @@
 				self.imgWidth = (self.options.width === 'auto')
 					? img.naturalWidth
 					: self.options.width;
-				
+					
+				self.imgHeight = img.naturalHeight;
 				self.dimensionsReady.resolve();
 			})
 		},

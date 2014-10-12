@@ -1,11 +1,11 @@
 ;(function($) {
 	container = $('div.jSlider').eq(0);
-	images = ['1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png'];
+	// images = ['1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png'];
+	images = ['1.png', 'grid1.jpg', 'grid2.jpg', 'grid3.jpg']
 	
 	images.forEach(function(str, index) {
 		images[index] = '../test_images/' + str;
 	})
-	// images = ['1.png', 'grid1.jpg', 'grid2.jpg', 'grid3.jpg']
 	options = {
 		// scrollInterval: 2500,
 		// autoScroll: false,
@@ -14,7 +14,7 @@
 		// scrollDuration: 700,
 		// navButtons:false
 		
-		width: '1200px',
+		width: 'auto',
 		frameBG: 'rgb(255,0,255)',
 		// marginTop: '50px',
 		// resizeDelay: 50,
