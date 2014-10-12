@@ -3,7 +3,7 @@
 	images = ['1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png'];
 	
 	images.forEach(function(str, index) {
-		images[index] = '../images/' + str;
+		images[index] = '../test_images/' + str;
 	})
 	// images = ['1.png', 'grid1.jpg', 'grid2.jpg', 'grid3.jpg']
 	options = {
@@ -18,11 +18,11 @@
 		frameBG: 'rgb(255,0,255)',
 		// marginTop: '50px',
 		// resizeDelay: 50,
-		sideButtons: 'none',
+		sideButtons: 'auto',
 		// leftBtn: $('div.testLeft'),
 		// rightBtn: $('div.testRight'),
 		navButtons: false,
-		// autoScroll: false,
+		autoScroll: false,
 		// scrollInterval: 1500,
 		// scrollDuration: 600,
 		// pauseDuration: 3000,
