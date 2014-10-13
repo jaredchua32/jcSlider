@@ -1,8 +1,18 @@
-div, body, ul, li {
+div, body, ul, li, section, pre {
 	margin:0;
 	padding:0;
 }
 
+body {
+	background-color:rgb(170,170,170);
+}
+
+div.mainContent {
+	background-color:rgb(255,255,255);
+	width:70%;
+	padding:3em;
+	margin:0 auto;
+}
 
 .cf:before,
 .cf:after {
@@ -12,11 +22,6 @@ div, body, ul, li {
 
 .cf:after {
 	clear:both;
-}
-
-header, section {
-	width:90%;
-	margin:0 auto;
 }
 
 ul {
@@ -33,6 +38,29 @@ h1, h2, p {
 	font-family:'helvetica', 'arial';
 }
 
-section.full {
-	width:100%;
+
+div.jSlider > button.leftBtn {
+	background-image:url(../../img/leftArrow.png);
+}
+
+div.jSlider > button.rightBtn {
+	background-image:url(../../img/rightArrow.png);
+}
+
+div.codeSnippet {
+	padding: 0 auto;
+	/*text-align:center;*/
+/*	background-color:rgb(200,200,200);
+	padding:1em;*/
+}
+
+pre {
+	display:inline-block;
+	background-color:rgb(200,200,200);
+	padding:1em;
+	margin:0 auto;
+}
+
+span.highlight {
+	color:rgb(255,0,0);
 }

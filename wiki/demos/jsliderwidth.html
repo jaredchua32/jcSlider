@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>jSlider Width</title>
-		<link rel="stylesheet" href="../../src_min/jSlider_min.css">
+		<link rel="stylesheet" href="../../src_dev/jSlider.css">
 		<link rel="stylesheet" href="demos.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
@@ -9,27 +9,41 @@
 		<!-- 100%
 		100% of container
 		static max-width -->
-		<header>
-			<nav class="cf">
-				<ul>
-					<li>test1</li>
-					<li>test2</li>
-					<li>test3</li>
-				</ul>
-			</nav>
-			<h1><code>jSlider.options.width</code> Property</h1>
-		</header>
-		
-		<section>
-			<p>Below are demonstrations of the effects of different values for jSlider's options' <code>width</code> property.</p>
-		</section>
-		<section class="full">
-			<h2>1. Full Page Width</h2>
-			<div class="jSlider" id="jSliderOne"></div>
-		</section>
-		<div class="jSlider"></div>
+		<div class="mainContent">
+			<header>
+				<nav class="cf">
+					<ul>
+						<li>test1</li>
+						<li>test2</li>
+						<li>test3</li>
+					</ul>
+				</nav>
+				<h1><code>jSlider.options.width</code> Property</h1>
+			</header>
+			
+			<section>
+				<p>Below are demonstrations of the effects of different values for jSlider's options' <code>width</code> property.</p>
+			</section>
+			<section>
+				<h2>1. Full Container Width</h2>
+				<div class="codeSnippet">
+					<pre>var 	containerOne = $('div#jSliderOne'),
+	imagesOne = [
+		'../../test_images/5.jpg',
+		'../../test_images/6.jpg',
+		'../../test_images/7.jpg',
+		'../../test_images/8.jpg',
+		'../../test_images/9.jpg'],
+	<span class="highlight">optionsOne = { width: '100%' },</span>
 
-		<script src="../../src_min/jSlider_min.js"></script>
-		<script src="jsliderwidth.js"></script>
+sliderOne = $.jSlider(containerOne, imagesOne, <span class="highlight">optionsOne</span>);</pre>
+				</div> <!-- div.codeSnippet -->
+				
+				<div class="jSlider" id="jSliderOne"></div>
+			</section>
+
+			<script src="../../src_min/jSlider_min.js"></script>
+			<script src="jsliderwidth.js"></script>
+		</div>
 	</body>
 </html>
