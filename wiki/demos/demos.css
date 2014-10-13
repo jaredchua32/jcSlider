@@ -1,0 +1,38 @@
+div, body, ul, li {
+	margin:0;
+	padding:0;
+}
+
+
+.cf:before,
+.cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+header, section {
+	width:90%;
+	margin:0 auto;
+}
+
+ul {
+	list-style:none;
+}
+
+li {
+	margin-right:1em;
+	display:block;
+	float:left;
+}
+
+h1, h2, p {
+	font-family:'helvetica', 'arial';
+}
+
+section.full {
+	width:100%;
+}
