@@ -89,7 +89,7 @@ The details of every setting in jSlider.options are outlined below.
 
 **Possible values**: `'none'` or `'auto'`.
 
-**Description**: The `sideButtons` property is what determines if jSlider will automaticcally generate the side buttons that allow the user to view the next or previous image. If either `leftBtn` or `rightBtn` are defined, this property is overridden and no side buttons will be generated. The `sideButtons` property has the default value of `'auto'`.
+**Description**: The `sideButtons` property is what determines if jSlider will automatically generate the side buttons that allow the user to view the next or previous image. If either `leftBtn` or `rightBtn` are defined, this property is overridden and no side buttons will be generated. The `sideButtons` property has the default value of `'auto'`.
 
 ***
 
