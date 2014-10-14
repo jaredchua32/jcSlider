@@ -13,6 +13,7 @@ div.mainContent {
 	width:70%;
 	padding:1em 3em 2em;
 	margin:0 auto;
+	transition:width 0.5s;
 }
 
 .cf:before,
@@ -74,4 +75,11 @@ span.highlight {
 a, a:visited {
 	color:rgb(30,125,230);
 	text-decoration:none;
+}
+
+@media (max-width: 767px) {
+	div.mainContent {
+		width:90%;
+		padding:0.4em 5% 1em;
+	}
 }
