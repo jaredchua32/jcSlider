@@ -28,5 +28,5 @@
 			'marginTop': '1em'
 		},
 
-		sliderTwo = $.jSlider(containerThree, images, optionsThree);
+		sliderThree = $.jSlider(containerThree, images, optionsThree);
 })(jQuery);

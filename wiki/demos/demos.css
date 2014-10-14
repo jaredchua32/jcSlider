@@ -8,9 +8,10 @@ body {
 }
 
 div.mainContent {
+	box-shadow:-3px 3px 20px rgba(0,0,0,0.7);
 	background-color:rgb(255,255,255);
 	width:70%;
-	padding:3em;
+	padding:1em 3em 2em;
 	margin:0 auto;
 }
 
@@ -24,13 +25,24 @@ div.mainContent {
 	clear:both;
 }
 
-ul {
+nav ul {
 	list-style:none;
 }
 
-li {
-	margin-right:1em;
-	display:block;
+nav li:nth-child(1n + 2) {
+	padding-left:0.5em;
+}
+
+nav li:nth-last-child(1n + 2) {
+	padding-right:0.5em;
+}
+
+nav li:not(:first-child):not(:last-child) {
+	border-right:1px solid #000;
+}
+
+nav li {
+	font-family:'Consolas', 'monospace';
 	float:left;
 }
 
@@ -47,20 +59,19 @@ div.jSlider > button.rightBtn {
 	background-image:url(../../img/rightArrow.png);
 }
 
-div.codeSnippet {
-	padding: 0 auto;
-	/*text-align:center;*/
-/*	background-color:rgb(200,200,200);
-	padding:1em;*/
-}
 
 pre {
-	display:inline-block;
 	background-color:rgb(200,200,200);
 	padding:1em;
 	margin:0 auto;
+	overflow:auto;
 }
 
 span.highlight {
 	color:rgb(255,0,0);
+}
+
+a, a:visited {
+	color:rgb(30,125,230);
+	text-decoration:none;
 }
