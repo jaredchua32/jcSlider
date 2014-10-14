@@ -24,7 +24,7 @@ I learned **a lot** while making jSlider. My hope is to share not only the plugi
 
 ## Installation
 
-Please visit the [Using jSlider](https://github.com/jaredchua32/jSlider/wiki/Using-jSlider) wiki page in the wiki for more information on how to install, configure, and use jSlider for your projects or applications.
+Please visit the [Using jSlider](https://github.com/jaredchua32/jSlider/wiki/Using-jSlider) wiki page in the wiki for full details on how to install, configure, and use jSlider for your projects or applications.
 
 ## Demo
 
@@ -38,3 +38,4 @@ View jSlider on my [site]()! (coming soon)
     - 10 (emulated)
     - 9 (emulated)
   - Safari
+  - Mobile
