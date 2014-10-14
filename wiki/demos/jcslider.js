@@ -7,12 +7,14 @@
 			'../../test_images/lightweight.png'],
 
 		images2 = [
-			'../../test_images/5.jpg',
-			'../../test_images/6.jpg',
-			'../../test_images/7.jpg',
-			'../../test_images/8.jpg',
-			'../../test_images/9.jpg'];
-
+			'../../test_images/noproblem.png',
+			'../../test_images/small.png',
+			'../../test_images/medium.png',
+			'../../test_images/large.png',
+			'../../test_images/venti.png',
+			'../../test_images/done.png',
+			'../../test_images/shrink.png',
+			'../../test_images/gone.png'];
 
 	var containerOne = $('div#sliderOne'),
 		optionsOne = {
@@ -22,13 +24,16 @@
 		
 		sliderOne = $.jSlider(containerOne, images, optionsOne);
 
-	// var containerTwo = $('div#jSliderTwo'),
-	// 	optionsTwo = {
-	// 		'width': '400px',
-	// 		'marginTop': '1em'
-	// 	},
+	var containerTwo = $('div#sliderTwo'),
+		optionsTwo = {
+			'width': '650px',
+			'sideButtons': 'none',
+			'navButtons': false,
+			'frameBG': 'rgba(0,0,0,0)',
+			'marginTop': '1em'
+		},
 
-	// 	sliderTwo = $.jSlider(containerTwo, images, optionsTwo);
+		sliderTwo = $.jSlider(containerTwo, images2, optionsTwo);
 
 	// var containerThree = $('div#jSliderThree'),
 	// 	optionsThree = {
