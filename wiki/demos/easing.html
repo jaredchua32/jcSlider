@@ -1,7 +1,7 @@
 <html>
 	<head>
-		<title>jSlider Easing</title>
-		<link rel="stylesheet" href="../../src_dev/jSlider.css">
+		<title>jcSlider Easing</title>
+		<link rel="stylesheet" href="../../src_dev/jcSlider.css">
 		<link rel="stylesheet" href="demos.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
@@ -10,7 +10,7 @@
 			<header>
 				<nav class="cf">
 					<ul>
-						<li>jSlider.options &gt;</li>
+						<li>jcSlider.options &gt;</li>
 						<li><a href="width.html">width</a></li>
 						<li>
 							easing
@@ -20,11 +20,11 @@
 						</li>
 					</ul>
 				</nav>
-				<h1>jSlider.options <code>easing</code> property</h1>
+				<h1>jcSlider.options <code>easing</code> property</h1>
 			</header>
 			
 			<section>
-				<p>Below are demonstrations of the effects of different values for jSlider's options' <code>easing</code> property.</p>
+				<p>Below are demonstrations of the effects of different values for jcSlider's options' <code>easing</code> property.</p>
 			</section>
 			<section>
 				<h2>1. Linear Easing</h2>
@@ -36,33 +36,33 @@
 		'../../test_images/8.jpg',
 		'../../test_images/9.jpg'];
 
-var	containerOne = $('div#jSliderOne'),
+var	containerOne = $('div#jcSliderOne'),
 	optionsOne = {
 		<span class="highlight">'easing': 'linear',</span>
 		'marginTop': '1em'
 	},
 	
-	sliderOne = $.jSlider(containerOne, images, <span class="highlight">optionsOne</span>);</pre>
+	sliderOne = $.jcSlider(containerOne, images, <span class="highlight">optionsOne</span>);</pre>
 				</div> <!-- div.codeSnippet -->
 				
-				<div class="jSlider" id="jSliderOne"></div>
+				<div class="jcSlider" id="jcSliderOne"></div>
 			</section> <!-- end section 1 -->
 
 			<section> <!-- section 2 -->
 				<h2>2. Swing Easing</h2>
 				<div class="codeSnippet">
-					<pre>var	containerTwo = $('div#jSliderTwo'),
+					<pre>var	containerTwo = $('div#jcSliderTwo'),
 	optionsTwo = {
 		<span class="highlight">'easing': 'swing',</span>
 		'marginTop': '1em'
 	},
 
-	sliderTwo = $.jSlider(containerTwo, images, <span class="highlight">optionsTwo</span>);</pre>
+	sliderTwo = $.jcSlider(containerTwo, images, <span class="highlight">optionsTwo</span>);</pre>
 				</div> <!-- div.codeSnippet -->
 				
-				<div class="jSlider" id="jSliderTwo"></div>
+				<div class="jcSlider" id="jcSliderTwo"></div>
 			</section> <!-- end section 2 -->
-			<script src="../../src_min/jSlider_min.js"></script>
+			<script src="../../src_dev/jcSlider.js"></script>
 			<script src="easing.js"></script>
 		</div>
 	</body>

@@ -12,7 +12,7 @@
 			'marginTop': '1em'
 		},
 		
-		sliderOne = $.jSlider(containerOne, images, optionsOne);
+		sliderOne = $.jcSlider(containerOne, images, optionsOne);
 
 	var containerTwo = $('div#jSliderTwo'),
 		optionsTwo = {
@@ -20,7 +20,7 @@
 			'marginTop': '1em'
 		},
 
-		sliderTwo = $.jSlider(containerTwo, images, optionsTwo);
+		sliderTwo = $.jcSlider(containerTwo, images, optionsTwo);
 
 	var containerThree = $('div#jSliderThree'),
 		optionsThree = {
@@ -28,13 +28,5 @@
 			'marginTop': '1em'
 		},
 
-		sliderThree = $.jSlider(containerThree, images, optionsThree);
-
-	// var containerThree = $('div#jSliderThree'),
-	// 	optionsThree = {
-	// 		'width': 'auto',
-	// 		'marginTop': '1em'
-	// 	},
-
-	// 	sliderThree = $.jSlider(containerThree, images, optionsThree);
+		sliderThree = $.jcSlider(containerThree, images, optionsThree);
 })(jQuery);

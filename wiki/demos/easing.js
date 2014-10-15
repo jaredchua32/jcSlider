@@ -6,27 +6,19 @@
 			'../../test_images/8.jpg',
 			'../../test_images/9.jpg'];
 
-	var containerOne = $('div#jSliderOne'),
+	var containerOne = $('div#jcSliderOne'),
 		optionsOne = {
 			'easing': 'linear',
 			'marginTop': '1em'
 		},
 		
-		sliderOne = $.jSlider(containerOne, images, optionsOne);
+		sliderOne = $.jcSlider(containerOne, images, optionsOne);
 
-	var containerTwo = $('div#jSliderTwo'),
+	var containerTwo = $('div#jcSliderTwo'),
 		optionsTwo = {
 			'easing': 'swing',
 			'marginTop': '1em'
 		},
 
-		sliderTwo = $.jSlider(containerTwo, images, optionsTwo);
-
-	// var containerThree = $('div#jSliderThree'),
-	// 	optionsThree = {
-	// 		'width': 'auto',
-	// 		'marginTop': '1em'
-	// 	},
-
-	// 	sliderThree = $.jSlider(containerThree, images, optionsThree);
+		sliderTwo = $.jcSlider(containerTwo, images, optionsTwo);
 })(jQuery);

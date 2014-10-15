@@ -52,11 +52,11 @@ h1, h2, h3, p, li {
 }
 
 
-div.jSlider > button.leftBtn {
+div.jcSlider > button.leftBtn {
 	background-image:url(../../img/leftArrow.png);
 }
 
-div.jSlider > button.rightBtn {
+div.jcSlider > button.rightBtn {
 	background-image:url(../../img/rightArrow.png);
 }
 

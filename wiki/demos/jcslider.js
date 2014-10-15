@@ -22,7 +22,7 @@
 			'marginTop': '1em'
 		},
 		
-		sliderOne = $.jSlider(containerOne, images, optionsOne);
+		sliderOne = $.jcSlider(containerOne, images, optionsOne);
 
 	var containerTwo = $('div#sliderTwo'),
 		optionsTwo = {
@@ -33,5 +33,5 @@
 			'marginTop': '1em'
 		},
 
-		sliderTwo = $.jSlider(containerTwo, imagesTwo, optionsTwo);
+		sliderTwo = $.jcSlider(containerTwo, imagesTwo, optionsTwo);
 })(jQuery);
