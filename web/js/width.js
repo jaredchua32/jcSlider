@@ -1,10 +1,10 @@
 ;(function($) {
 	var images = [
-			'../../test_images/5.jpg',
-			'../../test_images/6.jpg',
-			'../../test_images/7.jpg',
-			'../../test_images/8.jpg',
-			'../../test_images/9.jpg'];
+			'../images/5.jpg',
+			'../images/6.jpg',
+			'../images/7.jpg',
+			'../images/8.jpg',
+			'../images/9.jpg'];
 
 	var containerOne = $('div#jSliderOne'),
 		optionsOne = {

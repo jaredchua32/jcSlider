@@ -1,20 +1,20 @@
 ;(function($) {
 	var images = [
-			'../../test_images/jcslider.png',
-			'../../test_images/responsive.png',
-			'../../test_images/customizable.png',
-			'../../test_images/clean.png',
-			'../../test_images/lightweight.png'],
+			'../images/jcslider.png',
+			'../images/responsive.png',
+			'../images/customizable.png',
+			'../images/clean.png',
+			'../images/lightweight.png'],
 
 		imagesTwo = [
-			'../../test_images/noproblem.png',
-			'../../test_images/small.png',
-			'../../test_images/medium.png',
-			'../../test_images/large.png',
-			'../../test_images/venti.png',
-			'../../test_images/done.png',
-			'../../test_images/shrink.png',
-			'../../test_images/gone.png'];
+			'../images/noproblem.png',
+			'../images/small.png',
+			'../images/medium.png',
+			'../images/large.png',
+			'../images/venti.png',
+			'../images/done.png',
+			'../images/shrink.png',
+			'../images/gone.png'];
 
 	var containerOne = $('div#sliderOne'),
 		optionsOne = {
