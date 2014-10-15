@@ -87,3 +87,12 @@ footer a {
 		padding:0.4em 5% 1em;
 	}
 }
+
+section h1 {
+	font-size:2em;
+}
+
+section {
+	padding-bottom:1.5em;
+	border-bottom:1px solid #000000;
+}
