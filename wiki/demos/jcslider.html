@@ -3,16 +3,31 @@
 		<title>JCSlider</title>
 		<link rel="stylesheet" href="../../src_dev/jSlider.css">
 		<link rel="stylesheet" href="demos.css">
+		<link rel="stylesheet" href="jcslider.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="mainContent">
 			<header>
+				<nav class="cf">
+					<ul>
+						<li> JCSlider &gt; </li>
+						<li>
+							<a href="https://github.com/jaredchua32/jSlider"> View on GitHub </a>
+						</li>
+						<li>
+							<a href="https://github.com/jaredchua32/jSlider/wiki/Using-jSlider"> Download and Install </a>
+						</li>
+						<li>
+							<a href="https://github.com/jaredchua32/jSlider/wiki"> Visit the Wiki </a>
+						</li>
+					</ul>
+				</nav>
 				<h1> JCSlider </h1>
 			</header>
 			<section>
 				<h2> What is JCSlider? </h2>
-				<p> JCSlider is a responsive, customizable, clean, and lightweight image slider. </p>
+				<p> JCSlider is a responsive, customizable, clean, lightweight, and a very easy-to-use image slider. </p>
 				<div class="jSlider" id="sliderOne"></div>
 			</section>
 			<section>
@@ -23,16 +38,31 @@
 				</p>
 				<h3> Fully-loaded </h3>
 				<p>
-					JCSlider comes with everything it needs to operate. The only things JCSlider needs from you are the images you want to present.
+					JCSlider comes with everything it needs to operate. The only things JCSlider needs from you are the images you want to present and the options you wish to modify or override.
 				</p>
 				<h3> Customizable </h3>
-				<p>
+				<!-- <p>
 					You want to put in images that are different sizes? <strong>NO PROBLEM</strong>. You don't want the side buttons? <strong>DONE</strong>. You only want the slider to be no wider than 650px? <strong>SHRINK</strong>. The navigation buttons at the bottom are too distracting? <strong>GONE</strong>. You can modify JCSlider's options for every slider or on a per-instance basis. Please visit the
 					<a href="https://github.com/jaredchua32/jSlider/wiki/Configuring-jSlider's-Options">wiki page</a> for full details.
-				</p>
+				</p> -->
+					<p>
+						You want to put in images that are different sizes? <strong>NO PROBLEM</strong>.</p> 
+					<p>
+						You don't want the side buttons? <strong>DONE</strong>.
+					</p>
+					<p>
+						You only want the slider to be no wider than 650px? <strong>SHRINK</strong>.
+					</p>
+					<p>
+						The navigation buttons at the bottom are too distracting? <strong>GONE</strong>.
+					</p>
+					<p>
+						You can modify JCSlider's options for every slider or on a per-instance basis. Please visit the
+						<a href="https://github.com/jaredchua32/jSlider/wiki/Configuring-jSlider's-Options">wiki page</a> for full details.
+					</p>
 				<div class="jSlider" id="sliderTwo"></div>
 				<p> 
-					The slider above was customized by modifying the options for that particular instance:
+					The slider above was instantiated and customized by with the following code snippet (imageTwo array omitted):
 				</p>
 <pre>
 var	containerTwo = $('div#sliderTwo'),
@@ -44,9 +74,22 @@ var	containerTwo = $('div#sliderTwo'),
 		'marginTop': '1em'
 	},
 
-	sliderTwo = $.jSlider(containerTwo, images2, optionsTwo);
+	sliderTwo = $.jSlider(containerTwo, imagesTwo, optionsTwo);
 </pre>
 			</section>
+			<section>
+				<h2> Browser Support </h2>
+				<ul>
+					<li> Chrome </li>
+					<li> Firefox </li>
+					<li> Safari (including mobile) </li>
+					<li> Android </li>
+					<li> Internet Explorer 9 and up</li>
+				</ul>
+			</section>
+			<footer>
+				<a href="#"> Back to Top </a>
+			</footer>
 			<script src="../../src_min/jSlider_min.js"></script>
 			<script src="jcslider.js"></script>
 		</div>

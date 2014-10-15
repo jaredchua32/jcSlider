@@ -6,7 +6,7 @@
 			'../../test_images/clean.png',
 			'../../test_images/lightweight.png'],
 
-		images2 = [
+		imagesTwo = [
 			'../../test_images/noproblem.png',
 			'../../test_images/small.png',
 			'../../test_images/medium.png',
@@ -33,13 +33,5 @@
 			'marginTop': '1em'
 		},
 
-		sliderTwo = $.jSlider(containerTwo, images2, optionsTwo);
-
-	// var containerThree = $('div#jSliderThree'),
-	// 	optionsThree = {
-	// 		'width': 'auto',
-	// 		'marginTop': '1em'
-	// 	},
-
-	// 	sliderThree = $.jSlider(containerThree, images, optionsThree);
+		sliderTwo = $.jSlider(containerTwo, imagesTwo, optionsTwo);
 })(jQuery);

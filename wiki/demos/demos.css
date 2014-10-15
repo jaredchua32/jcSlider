@@ -1,4 +1,4 @@
-div, body, ul, li, section, pre {
+div, body, nav ul, nav li, section, pre {
 	margin:0;
 	padding:0;
 }
@@ -47,7 +47,7 @@ nav li {
 	float:left;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, li {
 	font-family:'helvetica', 'arial';
 }
 
@@ -75,6 +75,10 @@ span.highlight {
 a, a:visited {
 	color:rgb(30,125,230);
 	text-decoration:none;
+}
+
+footer a {
+	font-family:'helvetica', 'arial';
 }
 
 @media (max-width: 767px) {
