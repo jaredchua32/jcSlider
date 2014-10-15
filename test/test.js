@@ -1,5 +1,5 @@
 ;(function($) {
-	container = $('div.jSlider').eq(0);
+	container = $('div.jcSlider').eq(0);
 	// images = ['1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png', '1.png', '2.png', '3.png', '4.png'];
 	images = ['1.png', 'grid1.jpg', 'grid2.jpg', 'grid3.jpg']
 	
@@ -29,7 +29,7 @@
 		// easing: 'linear'
 		
 	}
-	slider1 = $.jSlider(container, images, options);
+	slider1 = $.jcSlider(container, images, options);
 	
 	// var zz = 0;
 	// var handelr;
@@ -45,7 +45,7 @@
 
 
 
-	container2 = $('div.jSlider').eq(1);
+	container2 = $('div.jcSlider').eq(1);
 	// images2 = ['1.png','2.png','3.png','4.png'];
 	images2 = ['5.jpg','6.jpg','7.jpg','8.jpg','9.jpg'];
 	images2.forEach(function(str, index) {
@@ -58,6 +58,6 @@
 		scrollDuration: 600,
 		easing: 'swing'
 	}
-	slider2 = $.jSlider(container2, images2, options2);
+	slider2 = $.jcSlider(container2, images2, options2);
 
 })(jQuery);

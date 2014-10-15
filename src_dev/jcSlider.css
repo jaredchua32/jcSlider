@@ -1,8 +1,8 @@
-div.jSlider ul,
-div.jSlider li,
-div.jSlider img,
-div.jSlider span,
-div.jSlider button {
+div.jcSlider ul,
+div.jcSlider li,
+div.jcSlider img,
+div.jcSlider span,
+div.jcSlider button {
 	padding:0;
 	margin-left:0;
 	margin-right:0;
@@ -10,7 +10,7 @@ div.jSlider button {
 	margin-top:0;
 }
 
-div.jSlider {
+div.jcSlider {
 	position:relative;
 	overflow:hidden;
 	margin-left:auto;
@@ -18,7 +18,7 @@ div.jSlider {
 	width:100%;
 }
 
-div.jSlider img {
+div.jcSlider img {
 	max-width:100%;
 	max-height:100%;
 	margin:auto;
@@ -26,27 +26,27 @@ div.jSlider img {
 }
 
 /* This rule is for IE9 and IE10 and below. */
-div.jSlider > div > div > img {
+div.jcSlider > div > div > img {
 	height:auto;
 	width:auto;
 }
 
-div.jSlider .cf:before,
-div.jSlider .cf:after {
+div.jcSlider .cf:before,
+div.jcSlider .cf:after {
 	content: "";
 	display:table;
 }
 
-div.jSlider .cf:after {
+div.jcSlider .cf:after {
 	clear:both;
 }
 
-div.jSlider > div.cf > div {
+div.jcSlider > div.cf > div {
 	float:left;
 }
 
-div.jSlider > button.leftBtn,
-div.jSlider > button.rightBtn {
+div.jcSlider > button.leftBtn,
+div.jcSlider > button.rightBtn {
 	position:absolute;
 	width:10%;
 	height:100%;
@@ -64,34 +64,34 @@ div.jSlider > button.rightBtn {
 
 /* Make sure that the urls for leftarrow
    and rightArrow.png are correct! */
-div.jSlider > button.leftBtn {
+div.jcSlider > button.leftBtn {
 	left:0%;
 	background-image:url(../img/leftArrow.png);
 }
 
-div.jSlider > button.rightBtn {
+div.jcSlider > button.rightBtn {
 	left:90%;
 	background-image:url(../img/rightArrow.png);
 }
 
-div.jSlider:hover > button.leftBtn,
-div.jSlider:hover > button.rightBtn,
-div.jSlider:hover   button.navBtn {
+div.jcSlider:hover > button.leftBtn,
+div.jcSlider:hover > button.rightBtn,
+div.jcSlider:hover   button.navBtn {
 	opacity:0.4;
 }
 
-div.jSlider > button.leftBtn:hover,
-div.jSlider > button.rightBtn:hover,
-div.jSlider   button.navBtn:hover {
+div.jcSlider > button.leftBtn:hover,
+div.jcSlider > button.rightBtn:hover,
+div.jcSlider   button.navBtn:hover {
 	opacity:0.8;
 }
 
-div.jSlider button {
+div.jcSlider button {
 	border:0;
 	outline-width:0;
 }
 
-div.jSlider > div.navBtnsContainer {
+div.jcSlider > div.navBtnsContainer {
 	position:absolute;
 	top:90%;
 	left:50%;
@@ -99,7 +99,7 @@ div.jSlider > div.navBtnsContainer {
 	clear:both;
 }
 
-div.jSlider > div.navBtnsContainer > div {
+div.jcSlider > div.navBtnsContainer > div {
 	height:100%;
 	left:-50%;
 	position:relative;
@@ -121,6 +121,6 @@ div.navBtnsContainer button.navBtn {
 	border-style:solid;
 }
 
-div.jSlider:hover > div.navBtnsContainer button.navBtn.activated {
+div.jcSlider:hover > div.navBtnsContainer button.navBtn.activated {
 	opacity:1;
 }

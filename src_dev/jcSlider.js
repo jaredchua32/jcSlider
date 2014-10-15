@@ -16,12 +16,12 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */	
 
 ;(function($, undefined) {
-	var JSlider = {
+	var JCSlider = {
 		init: function(container, imageUrls, options) {
 
 			this.sliderContainer = container;
 			this.urls = imageUrls;
-			this.options = $.extend({}, $.jSlider.options, options);
+			this.options = $.extend({}, $.jcSlider.options, options);
 			this.dispIndex = 0;
 
 			this.initImages();
@@ -428,15 +428,15 @@
 		timeDiff: function() {
 			return Date.now() - this.startTime;
 		}
-	} // end JSlider
+	} // end JCSlider
 
-	$.jSlider = function(container, images, options) {
-			var jSlider = Object.create(JSlider);
-			jSlider.init(container, images, options);
-			return jSlider;
+	$.jcSlider = function(container, images, options) {
+			var jcSlider = Object.create(JCSlider);
+			jcSlider.init(container, images, options);
+			return jcSlider;
 	}
 
-	$.jSlider.options = {
+	$.jcSlider.options = {
 		width: 'auto',
 		frameBG: '#000000',
 		marginTop: '0',
