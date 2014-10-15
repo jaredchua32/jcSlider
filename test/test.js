@@ -4,7 +4,7 @@
 	images = ['1.png', 'grid1.jpg', 'grid2.jpg', 'grid3.jpg']
 	
 	images.forEach(function(str, index) {
-		images[index] = '../test_images/' + str;
+		images[index] = '../images/' + str;
 	})
 	options = {
 		// scrollInterval: 2500,
@@ -49,7 +49,7 @@
 	// images2 = ['1.png','2.png','3.png','4.png'];
 	images2 = ['5.jpg','6.jpg','7.jpg','8.jpg','9.jpg'];
 	images2.forEach(function(str, index) {
-		images2[index] = '../test_images/' + str;
+		images2[index] = '../images/' + str;
 	})
 	options2 = {
 		marginTop: '50px',
