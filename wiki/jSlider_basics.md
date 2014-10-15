@@ -1,4 +1,4 @@
-My goal for this page is to help you understand how I've structured jSlider and the logic used for its features.
+My goal for this page is to help you understand how I've structured jcSlider and the logic used for its features.
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ My goal for this page is to help you understand how I've structured jSlider and 
 
 ## Structure
 
-jSlider is structured in the following manner:
+jcSlider is structured in the following manner:
 
 ```
 Slider Container
@@ -24,26 +24,26 @@ Slider Container
       Image
 ```
 
-Here is a gif I've made to help visualize the structure of jSlider:
+Here is a gif I've made to help visualize the structure of jcSlider:
 
-![jSlider_structure.gif](https://raw.githubusercontent.com/jaredchua32/jSlider/master/wiki/images/jSlider_structure.gif)
+![jcSlider_structure.gif](https://raw.githubusercontent.com/jaredchua32/jcSlider/master/wiki/images/jcSlider_structure.gif)
 
 ## Image Sliding
 
 ### queue
 
-Most of the sliders I have seen do not allow multiple clicks of the left and right slide buttons. However, because jSlider uses a queue, users may click the side buttons to their heart's desire.
+Most of the sliders I have seen do not allow multiple clicks of the left and right slide buttons. However, because jcSlider uses a queue, users may click the side buttons to their heart's desire.
 
-The functions jSlider uses to slide the images left and right are `JSlider.slideLeft()` and `JSlider.slideRight()`.
+The functions jcSlider uses to slide the images left and right are `JCSlider.slideLeft()` and `JCSlider.slideRight()`.
 
 The above functions are essentially the same but the ordering of the items added to the queue are slightly different.
 
-`JSlider.slideLeft()` is summarized by the following pseuducode:
+`JCSlider.slideLeft()` is summarized by the following pseuducode:
 
 ```
 1. If the nav buttons (the little dots towards the bottom of the slider)
 are enabled, deactivate the current button that's lit up and activate
-the next button (left or right, whichever is chosen by jSlider - will
+the next button (left or right, whichever is chosen by jcSlider - will
 be explained in the nav buttons section).
 
 2. Slide the image left.
@@ -55,7 +55,7 @@ current image index.
 auto scroll.
 ```
 
-`JSlider.slideRight()` on the other hand is summarized by the following pseudocode:
+`JCSlider.slideRight()` on the other hand is summarized by the following pseudocode:
 
 ```
 1. If the nav buttons (the little dots towards the bottom of the slider)
@@ -63,7 +63,7 @@ are enabled, deactivate the current button that's lit up.
 
 2. Move the last image to the end of the slider and update the
 current image index and activate the next button (left or right,
-whichever is chosen by jSlider - will be explained in the nav buttons
+whichever is chosen by jcSlider - will be explained in the nav buttons
 section).
 
 3. Slide the image right.
@@ -74,11 +74,11 @@ auto scroll.
 
 ### pause
 
-Whenever a side or nav button is clicked, jSlider's auto scroll feature is paused. As mentioned in the queue portion of this page, the auto scroll feature is resumed once there are no longer any more items in the queue. Because the queue is emptied before the final scrolling finishes, `jSlider.options.scrollDuration` is added on to `jSlider.options.pauseDuration` in order to ensure that the slider will indead pause for at least the amount assigned to `jSlider.options.pauseDuration`.
+Whenever a side or nav button is clicked, jcSlider's auto scroll feature is paused. As mentioned in the queue portion of this page, the auto scroll feature is resumed once there are no longer any more items in the queue. Because the queue is emptied before the final scrolling finishes, `jcSlider.options.scrollDuration` is added on to `jcSlider.options.pauseDuration` in order to ensure that the slider will indead pause for at least the amount assigned to `jcSlider.options.pauseDuration`.
 
 ### nav buttons
 
-I've programed jSlider to scroll either left or right - whichever is the shorter path to the destination image.
+I've programed jcSlider to scroll either left or right - whichever is the shorter path to the destination image.
 
 Below is the code snippet for calculating the left and right distances.
 
@@ -101,4 +101,4 @@ if(diff === 0) {
 }
 ```
 
-jSlider then scrolls left or right, depending on which is the shorter path.
+jcSlider then scrolls left or right, depending on which is the shorter path.
