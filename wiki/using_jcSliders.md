@@ -14,7 +14,7 @@ In order to install jcSlider, you must:
 
   *You may also include the current jQuery version from [Google's CDN](https://developers.google.com/speed/libraries/devguide#jquery) or [jQuery's CDN](http://jquery.com/download/#jquery-39-s-cdn-provided-by-maxcdn).
 
-2. Download the source code and images for the plugin ([.zip file](#) or individual files below).
+2. Download the [source code](https://github.com/jaredchua32/jcSlider/tree/master/src_zip) and images for the plugin.
 
 3. Place the following into your project folder:
 

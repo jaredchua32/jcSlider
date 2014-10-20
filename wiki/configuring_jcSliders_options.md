@@ -67,7 +67,7 @@ The details of every setting in jcSlider.options are outlined below.
 
 **Description**: The `width` property is what determines the `max-width` of the main image slider container. The default value of this property is `'auto'`, which is 100% the width of the first image in the `images` array.
 
-Please visit the [demo page](http://jaredchua.com/jcslider/wiki/demos/width.html) to see this property in action.
+Please visit the [demo page](http://jaredchua.com/jcslider/width.html) to see this property in action.
 
 ***
 
@@ -77,7 +77,7 @@ Please visit the [demo page](http://jaredchua.com/jcslider/wiki/demos/width.html
 
 **Description**: The `frameBG` property is the `background-color` of the frames. The easiest way to understand this is by envisioning a picture frame with a picture that does not occupy the entire frame - `frameBG` is simply the parts of the frame that have not been covered by the image. Because jcSlider has the ability to display images with varying dimensions, 'rectangles' are displayed around the image in order to preserve the image's aspect ratio. The default value of this property is `'#000000'`.
 
-Please visit the [demo page](http://jaredchua.com/jcslider/wiki/demos/framebg.html) to see this property in action.
+Please visit the [demo page](http://jaredchua.com/jcslider/framebg.html) to see this property in action.
 
 ***
 
@@ -153,4 +153,4 @@ Please visit the [demo page](http://jaredchua.com/jcslider/wiki/demos/framebg.ht
 
 **Description**: This property is just an extension of jQuery's easing property for animations. Please visit the [DEMO] to see the difference between `'linear'` and `'swing'`. The default value of this property is `'linear'`.
 
-Please visit the [demo page](http://jaredchua.com/jcslider/wiki/demos/easing.html) to see this property in action.
+Please visit the [demo page](http://jaredchua.com/jcslider/easing.html) to see this property in action.

@@ -1,34 +1,34 @@
-# JCSlider
+# jcSlider
 
 I've always been amazed by the sliders that people make - so I thought: "Hey, I should make my own slider."
 
-I created JCSlider to help familiarize myself with even more JavaScript, jQuery, and CSS concepts and best practices. In addition, I have several artist friends whom would like their work to be showcased!
+I created jcSlider to help familiarize myself with even more JavaScript, jQuery, and CSS concepts and best practices. In addition, I have several artist friends whom would like their work to be showcased!
 
 ## Features
 
 ### Responsive Image Slider
 
-JCSlider is written to be fully responsive no matter where in your page it is placed.
+jcSlider is written to be fully responsive no matter where in your page it is placed.
 
 ### Fully-Customizable
 
-JCSlider's options can easily be overwritten globally for all sliders or on a per-instance basis. Please visit the [Configuring jCSlider's Options](https://github.com/jaredchua32/jCSlider/wiki/Configuring-jCSlider's-Options) page in the wiki for more information.
+jcSlider's options can easily be overwritten globally for all sliders or on a per-instance basis. Please visit the [Configuring jcSlider's Options](https://github.com/jaredchua32/jcSlider/wiki/Configuring-jcSlider's-Options) page in the wiki for more information.
 
-### jCSlider Will Display ANY Image!
+### jcSlider Will Display ANY Image!
 
-The images you give to JCSlider do not need to have the same dimensions. jCSlider will automatically display them elegantly.
+The images you give to jcSlider do not need to have the same dimensions. jcSlider will automatically display them elegantly.
 
 ## For Developers
 
-I learned **a lot** while making jCSlider. My hope is to share not only the plugin, but also some of the knowledge that I have gained from this project. Please visit the [jCSlider Basics](https://github.com/jaredchua32/jCSlider/wiki/jCSlider-Basics) wiki page to see how jCSlider works.
+I learned **a lot** while making jcSlider. My hope is to share not only the plugin, but also some of the knowledge that I have gained from this project. Please visit the [jcSlider Basics](https://github.com/jaredchua32/jcSlider/wiki/jcSlider-Basics) wiki page to see how jcSlider works.
 
 ## Installation
 
-Please visit the [Using jCSlider](https://github.com/jaredchua32/jCSlider/wiki/Using-jCSlider) wiki page in the wiki for full details on how to install, configure, and use jCSlider for your projects or applications.
+Please visit the [Using jcSlider](https://github.com/jaredchua32/jcSlider/wiki/Using-jcSlider) wiki page in the wiki for full details on how to install, configure, and use jcSlider for your projects or applications.
 
 ## Demo
 
-View jCSlider on my [site]()! (coming soon)
+View jcSlider on my [site](http://jaredchua.com/jcslider/jcslider.html)!
 
 ## Browser Support
   - Chrome
